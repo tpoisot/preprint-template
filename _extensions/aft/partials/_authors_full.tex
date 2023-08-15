@@ -1,0 +1,6 @@
+% This is used at the end of the preprint to give the full affiliations
+$it.name.literal$\,$if(it.orcid)$~\orcidlink{$it.orcid$}$endif$\,$if(it.email)$~\textit{$it.email$}$endif$
+
+$if(it.affiliations)$$for(it.affiliations)$
+{\small $it.name$}\newline
+$endfor$$endif$

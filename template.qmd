@@ -149,20 +149,6 @@ PDF are rendered using {{< latex >}} but it is best if one can use a Markdown sy
 
 This format hide chunks by default as option has been set in `_extension.yml` file.
 
-```{r}
-#| prompt: true
-# Loading some data but this chunk won't be shown.
-data("quine", package = "MASS")
-```
-
-But you can set `echo` option to `true` locally in the chunk
-
-```{r}
-#| echo: true
-m_pois <- glm(Days ~ (Eth + Sex + Age + Lrn)^2, data = quine, family = poisson)
-summary(m_pois)
-```
-
 ### Text color {#sec-summary}
 
 Our format makes applying color on inline text possible using the `[content]{color=<name>}` syntax. Let's see an example.
