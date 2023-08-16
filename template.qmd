@@ -1,11 +1,14 @@
 ---
-title: "Demo aft format to use as template"
+title: "Default format for a generic preprint"
 format:
   aft-pdf:
-    keep-tex: true  
+    keep-tex: false
   aft-html: default
 author:
-  - name: John Doe
+  - name: Author 1
+    id: auth1
+    corresponding: true
+    equal-contributor: true
     affiliations:
       - name: Dummy org
         department: Cool Dep
@@ -13,18 +16,35 @@ author:
         city: Magic city
         country: best one
         postal-code: 9999
-      - Demo Journal
+      - name: Affiliation 2
     orcid: 0000-0000-0000-0000
+    role:
+        - writing – original draft
+        - formal analysis
+        - conceptualization
     email: JD@example.org
     url: https://example.org/
-  - name: his friend
+  - name: Author 2
+    id: auth2
+    equal-contributor: true
+    role:
+        - software
+        - data curation
     affiliations:
       - Another Affiliation
+  - name: Author 3
+    id: auth3
+    affiliations:
+      - Another Affiliation
+    role:
+        - shared memes
+        - supervision
 abstract: |
   This document is only a demo explaining how to use the template.
 keywords: [template, demo]
 reference-section-title: References
 bibliography: bibliography.bib  
+author-sheet: true
 ---
 
 ## Introduction {#sec-intro}
@@ -32,6 +52,25 @@ bibliography: bibliography.bib
 This is a dummy example only for the purpose to use this repo as a template starter for creating new formats.  For this `article-format-template` we call our dummy article `aft`. 
 
 This quarto extension format supports PDF and HTML outputs. `quarto-journals` is aiming at porting existing {{< latex >}} template from journals to be used with quarto. PDF format is what require the most work to fit the journals guideline, but Quarto offer a nice rendering for HTML output too. This demo format template only use basic HTML format without any customization for now.
+
+## Authors roles
+
+[CreDITS role](https://credit.niso.org)
+
+- Conceptualization
+- Data curation
+- Formal Analysis (alias: `analysis`)
+- Funding acquisition (alias: `funding`)
+- Investigation
+- Methodology
+- Project administration
+- Resources
+- Software
+- Supervision
+- Validation
+- Visualization
+- Writing – original draft (alias: `writing`)
+- Writing – review & editing (alias: `editing`)
 
 ## About Quarto Extensions formats And Quarto Journals Article
 

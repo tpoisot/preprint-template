@@ -1,10 +1,10 @@
 $-- Placed at the end of the body, after 'include-after' content
-$-- %%%% TODO %%%%%
-$-- Use it if you need to insert content at this specific place of the main Pandoc's template. Otherwise, remove it.
 $-- %%%%%%%%%%%%%%%
 
+$if(author-sheet)$
 \newpage
 \thispagestyle{empty}
 
 \section*{Authorship information}
-${ by-author:_authors_full.tex()[\\ ] }
+${ by-author:_authors_data.tex() }
+$endif$

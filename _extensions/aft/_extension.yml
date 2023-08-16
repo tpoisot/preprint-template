@@ -28,7 +28,7 @@ contributes:
       template-partials:
         - "partials/title.tex"
         - "partials/_authors.tex"
-        - "partials/_authors_full.tex"
+        - "partials/_authors_data.tex"
         - "partials/after-body.tex"
       format-resources:
         - preprint.sty
