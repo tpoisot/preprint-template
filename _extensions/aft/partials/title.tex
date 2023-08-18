@@ -20,3 +20,14 @@ $if(subtitle)$
 $endif$
 \author{${ by-author:_authors.tex()[; ] }}
 \date{$date$}
+
+$if(author-sheet)$
+\usepackage{setspace}
+\usepackage[left,pagewise]{lineno}
+\onehalfspacing
+\linenumbers
+\geometry{margin=2cm}
+$else$
+\geometry{lmargin=2cm}
+\geometry{rmargin=4cm}
+$endif$

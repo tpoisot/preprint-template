@@ -2,8 +2,11 @@
 title: "Default format for a generic preprint"
 format:
   aft-pdf:
-    keep-tex: false
-  aft-html: default
+    keep-tex: true
+    author-sheet: true
+    draft-format: true
+    masked-review: true
+  html: default
 author:
   - name: Author 1
     id: auth1
@@ -44,7 +47,6 @@ abstract: |
 keywords: [template, demo]
 reference-section-title: References
 bibliography: bibliography.bib  
-author-sheet: true
 ---
 
 ## Introduction {#sec-intro}
