@@ -21,13 +21,15 @@ $endif$
 \author{${ by-author:_authors.tex()[; ] }}
 \date{$date$}
 
-$if(formatting.draft-format)$
 \usepackage{setspace}
 \usepackage[left,pagewise]{lineno}
+
+$if(formatting.draft-format)$
 \onehalfspacing
 \linenumbers
 \geometry{margin=2cm}
 $else$
+\singlespacing
 \geometry{lmargin=2cm}
 \geometry{rmargin=4cm}
 $endif$
