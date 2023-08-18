@@ -72,6 +72,16 @@ This quarto extension format supports PDF and HTML outputs. `quarto-journals` is
 -   Writing -- original draft (alias: `writing`)
 -   Writing -- review & editing (alias: `editing`)
 
+## Floats
+
+| Col1 | Col2 | Col3 |
+|------|------|------|
+| a    | d    | 1    |
+| b    | e    | 2    |
+| c    | f    | 3    |
+
+: table
+
 ## About Quarto Extensions formats And Quarto Journals Article
 
 First, please get familiar with the following resources:

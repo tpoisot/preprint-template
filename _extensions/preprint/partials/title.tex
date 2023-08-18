@@ -25,9 +25,10 @@ $endif$
 \usepackage[left,pagewise]{lineno}
 
 $if(formatting.draft-format)$
+\usepackage[nolists,noheads,markers]{endfloat}
 \geometry{margin=2cm}
 $else$
 \singlespacing
-\geometry{lmargin=2cm}
-\geometry{rmargin=4cm}
+\geometry{lmargin=3cm}
+\geometry{rmargin=5cm}
 $endif$
