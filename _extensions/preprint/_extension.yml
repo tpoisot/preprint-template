@@ -14,11 +14,9 @@ contributes:
       documentclass: article
       toc: false
       colorlinks: true
-      urlcolor: red
       fig-width: 6.5
       fig-height: 4.5
-      biblio-style: te
-      cite-method: natbib
+      csl: https://www.zotero.org/styles/ecology-letters
       # Set this below (`biblio-config: false`) if your cls already load a bst file
       # biblio-config: false
       # Content to add in header that your format is using

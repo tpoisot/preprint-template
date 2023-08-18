@@ -4,6 +4,10 @@ format:
   preprint-pdf:
     keep-tex: false
     formatting:
+        draft-format: true
+    mainfont: DejaVu Serif
+    monofont: DejaVu Sans Mono
+    sansfont: DejaVu Sans
   html: default
 author:
   - name: First Author
