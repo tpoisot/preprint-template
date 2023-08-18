@@ -4,9 +4,9 @@ format:
   preprint-pdf:
     keep-tex: false
     formatting:
-        - author-sheet
-        - draft-format
-        - masked-review
+        author-sheet: false
+        masked-review: true
+        draft-format: true
   html: default
 author:
   - name: Author 1
