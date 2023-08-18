@@ -3,8 +3,10 @@ title: "Default format for a generic preprint"
 format:
   preprint-pdf:
     keep-tex: false
-    author-sheet: true
-    masked-review: true
+    formatting:
+        - author-sheet
+        - draft-format
+        - masked-review
   html: default
 author:
   - name: Author 1
