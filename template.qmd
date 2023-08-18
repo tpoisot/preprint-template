@@ -4,12 +4,9 @@ format:
   preprint-pdf:
     keep-tex: false
     formatting:
-        author-sheet: true
-        masked-review: false
-        draft-format: false
   html: default
 author:
-  - name: Author 1
+  - name: First Author
     id: auth1
     corresponding: true
     equal-contributor: true
@@ -28,7 +25,7 @@ author:
         - conceptualization
     email: JD@example.org
     url: https://example.org/
-  - name: Author 2
+  - name: Second Author
     id: auth2
     equal-contributor: true
     role:
@@ -36,7 +33,7 @@ author:
         - data curation
     affiliations:
       - Another Affiliation
-  - name: Author 3
+  - name: Last Author
     id: auth3
     affiliations:
       - Another Affiliation

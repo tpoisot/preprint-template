@@ -3,18 +3,31 @@ $--
 $-- %%%% TODO %%%%%
 $-- Customize is needed, otherwise remove this partials to use Quarto default one
 $-- %%%%%%%%%%%%%%%%
-$if(has-frontmatter)$
-\frontmatter
-$endif$
-$if(title)$
-$if(beamer)$
-\frame{\titlepage}
+
+$if(formatting.draft-format)$\thispagestyle{empty}$endif$
+{\bfseries\sffamily\Large ${title}}
+$if(formatting.masked-review)$
 $else$
-\maketitle
+$if(formatting.draft-format)$\vfil$else$\vskip 1em$endif$
+${ by-author:_authors.tex()[; ] }
 $endif$
+$if(formatting.draft-format)$\vfil$else$\vskip 2em$endif$
+{\small
 $if(abstract)$
-\begin{abstract}
-$abstract$
-\end{abstract}
+\textbf{Abstract:} $abstract$
 $endif$
+$if(formatting.draft-format)$\vfil$else$\vskip 1em$endif$
+$if(keywords)$
+\textbf{Keywords:} %
+$for(keywords/allbutlast)$${it}, $endfor$%
+$for(keywords/last)$${it}$endfor$%
+$endif$
+}
+$if(formatting.draft-format)$\clearpage$else$\vskip 4em$endif$
+$if(formatting.draft-format)$
+\setcounter{page}{1}
+\onehalfspacing
+\linenumbers
+$else$
+\flushleft
 $endif$

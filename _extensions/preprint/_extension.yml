@@ -30,6 +30,7 @@ contributes:
         - "partials/_authors.tex"
         - "partials/_authors_data.tex"
         - "partials/after-body.tex"
+        - "partials/before-body.tex"
       format-resources:
         - preprint.sty
         - te.bst
